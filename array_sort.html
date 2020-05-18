@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Sort</title>
+</head>
+<body>
+<center><h3 id="srt"></h3>
+<button onclick="increasingOrder()">Arrange Ascendiong</button><br><br>
+<button onclick="decreasingOrder()">Arrange Descending</button></center>
+<script type="text/javascript">
+	var arr = [34,68,24,89,100,479,2,43];
+		document.getElementById('srt').innerHTML = arr;
+function increasingOrder(){
+		arr.sort(function(a , b){return a - b})
+		document.getElementById('srt').innerHTML = arr;		
+				};
+function decreasingOrder(){
+		arr.sort(function(a , b){return b - a})
+		document.getElementById('srt').innerHTML = arr;		
+				};	
+	
+</script>
+</body>
+</html>
